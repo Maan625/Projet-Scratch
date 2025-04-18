@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Déclaration du type de document HTML et définition de la langue principale en français -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères (UTF-8 pour les caractères spéciaux) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <!-- Rend le site responsive : adapte l'affichage selon la taille de l'écran -->
+  
+  <title>Jeu de chat perché</title> <!-- Titre de l’onglet de la page -->
+  
+  <link rel="stylesheet" href="style.css"> 
+  <!-- Lien vers une feuille de style externe nommée "style.css" -->
+</head>
+
+<!-- Style CSS directement intégré dans le fichier HTML -->
+<style>
+  
+body {
+ background-image: url(rr.png);
+  text-align: right; 
+  background-repeat: no-repeat;  
+  background-position: left;   /* Centrage du contenu horizontalement */
+background-color:rgb(185, 210, 44);
+background-size: 600px;
+}
+
+h1{
+  text-align: center; /* Centrer le texte du titre */
+  color: black;
+  font-size: 70px;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   
+}
+.game-container {
+  color:rgb(107, 71, 4); /* Couleur du texte pour cette section */
+  padding: 20px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: large;
+  font-style: italic;
+}
+
+.h2 {
+  background-color: yellowgreen; /* Fond jaune pour les sous-titres */
+  padding: 4px;             /* Espace intérieur autour du texte */
+  display: inline;          /* Affichage en ligne (évite le saut de ligne) */
+}
+
+p {
+  font-family: "Bungee Spice", sans-serif;/* Définir la police principale du texte */
+  font-weight: 400;/* Définir le poids de la police (épaisseur des lettres) */
+
+  font-style: normal;/* Définir le style de la police */
+    background-color:yellowgreen;/* Couleur de fond de l’élément */
+    font-size: 20px;/* Taille de la police */
+     font-weight: 100;
+  display: inline;             /* Empêche le paragraphe de prendre toute la largeur */
+}
+button{
+                background-color:wheat; /* Vert */
+                border: none; /* Pas de bordure */
+                color: black; /* Couleur du texte */
+                color: wheat;
+                padding: 15px 32px; /* Taille du bouton */
+                text-align: left; /* Alignement du texte à gauche */
+                text-decoration: none; /* Pas de soulignement */  
+                text-decoration-skip: none; /* Pas de soulignement sur le texte */  
+                display: inline-block; /* Affichage en ligne */ 
+                font-size: 16px; /* Taille de la police */
+                margin: 4px 2px; /* Marges autour du bouton */
+                cursor: pointer;  /* Curseur pointeur au survol */
+                font-style: italic; /* Italique */
+                border-radius: 20px 0 20px 0; /* Coins arrondis */
+            }
+</style>
+
+<body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- Préconnexion pour améliorer la vitesse de chargement des polices -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Préconnexion pour les polices Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Codystar:wght@300;400&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+MX+Guides&display=swap" rel="stylesheet"> <!-- Lien vers les polices Google utilisées dans le design -->
+  <script src="script.js"></script> <!-- Lien vers un fichier JavaScript externe (non fourni ici) -->
+  <!-- En-tête de la page -->
+  <header>
+    <h1>Bienvenue dans mon jeu Scratch 🎮</h1> 
+    <!-- Titre principal affiché en haut de la page -->
+
+    <br><br> <!-- Sauts de ligne pour espacer les éléments -->
+
+    <p>Essayez ce jeu amusant que j'ai créé avec Scratch !</p> 
+    <!-- Petit paragraphe d’introduction -->
+    
+    <br><br>
+  </header>
+
+  <!-- Contenu principal de la page -->
+  <main>
+    <section class="game-container">
+      <!-- Section contenant la description et le jeu -->
+      
+      <h2 class="h2">🎯 Objectif du jeu</h2> 
+      <!-- Sous-titre sur fond jaune grâce à la classe .h2 -->
+
+      <br><br>
+      <p>Dans ce jeu, la souris se déplace  automatiquement  <br>tandis que le joueur contrôle le chat en utilisant des flèches. <br> Le but est d’attraper la souris!</p>
+      <!-- Explication des règles du jeu -->
+
+      <br><br>
+
+      <h2 class="h2">🕹️ Jouer maintenant</h2> 
+      <!-- Invitation à lancer le jeu -->
+
+      <br><br><br>
+
+      <!-- Intégration du projet Scratch via un iframe -->
+      <iframe src="https://scratch.mit.edu/projects/1158374333/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <!-- Remarque : l'utilisateur doit remplacer l'URL par celle de SON propre projet Scratch -->
+      <br>
+      <button>   <a href="https://scratch.mit.edu/projects/1158374333/fullscreen/" target="_blank">Jouer dans Scratch</a> </button>
+    </section>
+  </main>
+
+  <br><br><br>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>© 2025 - Mon projet Scratch. Tous droits réservés.</p>
+    <!-- Mention légale et droits d'auteur -->
+  </footer>
+
+</body>
+</html>

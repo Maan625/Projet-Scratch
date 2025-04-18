@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'> <!-- Définit l'encodage des caractères -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'> <!-- Pour une bonne compatibilité avec les navigateurs -->
+    <title>Page Title</title> <!-- Titre de l’onglet de la page -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!-- Pour un affichage responsive sur mobile -->
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(chat\ orange.png); /* Image de fond */
+        background-repeat: no-repeat; /* Ne pas répéter l’image */
+        background-size: cover; /* Adapter l’image à toute la page */
+        background-position: center; /* Centrer l’image */
+        height: 100vw; /* Hauteur égale à la largeur de la fenêtre */
+    }
+
+    .titre {
+        background-color: rgba(0,0,0,0.5);  /* Fond semi-transparent noir */
+        color: white; /* Texte en blanc */
+        margin-right: 20px;
+        border-radius: 0 60px 0 60px; /* Coins arrondis haut gauche et bas droite */
+        padding: 20px; /* Espacement intérieur */
+        margin-bottom: 20px; /* Espacement avec les autres éléments */
+        position: initial;
+        bottom: 0;
+        right: 0;
+        text-align: center; /* Centrer le texte */
+    }
+
+    .blinking_title {
+        animation: blink 5s infinite; /* Animation clignotante */
+        font-size: 100px; /* Taille de police */
+        color: black;
+        padding: 0;  /* Pas d'espacement interne */
+        text-align: center;
+    }
+
+    @keyframes blink {
+        0%, 100% {
+            opacity: 1; /* Opacité à 1 (visible) */
+        }
+        50% {
+            opacity: 0;  /* Opacité à 0 (invisible) */
+        }
+    }
+
+    img {
+        text-align: right; /* (Ne fonctionne pas ici pour img) */
+        top: 0;
+        left: 0;
+        margin: 20px;
+        border-radius: 50%; /* Rendre l’image ronde */
+    }
+
+    button {
+        background-color: #4CAF50; /* Couleur verte */
+        border: none; /* Pas de bordure */
+        color: white;
+        padding: 15px 32px; /* Taille du bouton */
+        text-align: left;            /* Alignement du texte à gauche */
+        text-decoration-skip: none;     /* Pas de soulignement */
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer; /* Curseur pointeur quand on survole */
+        font-style: italic;   /* Italique */ 
+    }
+</style>
+
+<body>
+    <!-- Titre principal avec animation clignotante -->
+    <h1 class="blinking_title"><strong>#</strong>Scratch 🎮</h1>
+
+    <!-- Image animée (GIF) -->
+    <img src="tenor.gif" alt="chatte" width="150px">
+    
+    <!-- Bloc contenant le titre, description et le jeu Scratch intégré -->
+    <div class="titre">
+        <h1>🎮 Mission Chat : Évite la Souris ! 🐭</h1>             
+        <p>
+            Prépare-toi pour une aventure pleine de réflexes ! <br>
+            Contrôle le chat et fais tout pour ne pas toucher la souris. <br> 
+            Plus tu tiens longtemps, plus le défi devient intense... Seras-tu à la hauteur ?
+        </p>
+
+        <!-- Intégration du projet Scratch dans la page -->
+        <iframe src="https://scratch.mit.edu/projects/1158431316/embed"
+                allowtransparency="true" width="485" height="402"
+                frameborder="0" scrolling="no" allowfullscreen ></iframe>
+        <br>
+
+        <!-- Bouton avec un lien vers le projet sur Scratch -->
+        <button>
+            <a href="https://scratch.mit.edu/projects/1158431316/" target="_blank">
+                Jouer dans Scratch
+            </a>
+        </button>
+    </div>
+</body>
+</html>

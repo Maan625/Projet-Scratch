@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Déclaration du type de document HTML et définition de la langue principale en français -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères (UTF-8 pour les caractères spéciaux) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <!-- Rend le site responsive : adapte l'affichage selon la taille de l'écran -->
+  
+  <title>Jeu de Requin affamé</title> <!-- Titre de l’onglet de la page -->
+  
+  <link rel="stylesheet" href="style.css"> 
+  <!-- Lien vers une feuille de style externe nommée "style.css" -->
+</head>
+
+<!-- Style CSS directement intégré dans le fichier HTML -->
+<style>
+  .bubble {
+  position: fixed;
+  bottom: -50px;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(236, 233, 246, 0.4);
+  border-radius: 50%;
+  animation: rise 20s infinite ease-in;
+}
+
+@keyframes rise {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-800px) scale(0.5); opacity: 0; }
+}
+body {
+ background-image: url(requin\ blue.png);
+  text-align: right; 
+  background-repeat: no-repeat;  
+  background-position: left;   /* Centrage du contenu horizontalement */
+background-color:rgb(4, 78, 81);
+background-size: 500px;
+
+ 
+}
+footer{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  color:black;
+  font-size: 70px;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.game-container {
+  color: black; /* Couleur du texte pour cette section */
+  padding: 20px;
+  margin: 20px;
+}
+
+.h2 {
+  background-color:rgb(4, 78, 81) ; /* Fond jaune pour les sous-titres */
+  padding: 4px;             /* Espace intérieur autour du texte */
+  display: inline;          /* Affichage en ligne (évite le saut de ligne) */
+}
+
+p {
+    
+    background-color:rgb(4, 78, 81);
+    font-size: 20px;
+     font-weight: 100;
+  display: inline;             /* Empêche le paragraphe de prendre toute la largeur */
+color: cadetblue;
+font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+button{
+                background-color:wheat; /* Vert */
+                border: none;
+                color: wheat;
+                padding: 15px 32px;
+                text-align: left;
+                text-decoration-skip: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                font-style: italic;
+                border-radius: 20px 0 20px 0;
+            }
+            
+</style>
+</style>
+
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Codystar:wght@300;400&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+  <!-- En-tête de la page -->
+  <header>
+    <h1>Bienvenue dans mon jeu Scratch 🎮</h1> 
+    <!-- Titre principal affiché en haut de la page -->
+
+    <br><br> <!-- Sauts de ligne pour espacer les éléments -->
+
+    <p>Essayez ce jeu amusant que j'ai créé avec Scratch !</p> 
+    <!-- Petit paragraphe d’introduction -->
+    
+    <br><br>
+  </header>
+
+  <!-- Contenu principal de la page -->
+  <main>
+    <section class="game-container">
+      <!-- Section contenant la description et le jeu -->
+      
+      <h2 class="h2">🎯 Objectif du jeu</h2> 
+      <!-- Sous-titre sur fond jaune grâce à la classe .h2 -->
+
+      <br><br>
+      <p>Dans ce jeu, la souris se déplace  automatiquement  <br>tandis que le joueur contrôle le chat en utilisant des flèches. <br> Le but est d’attraper la souris!</p>
+      <!-- Explication des règles du jeu -->
+
+      <br><br>
+
+      <h2 class="h2">🕹️ Jouer maintenant</h2> 
+      <!-- Invitation à lancer le jeu -->
+
+      <br><br><br>
+
+      <!-- Intégration du projet Scratch via un iframe -->
+      <iframe src="https://scratch.mit.edu/projects/1158355571/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      <!-- Remarque : l'utilisateur doit remplacer l'URL par celle de SON propre projet Scratch -->
+       <br>
+      <button>   <a href="https://scratch.mit.edu/projects/1158355571/embed" target="_blank">Jouer dans Scratch</a> </button>
+
+    </section>
+  </main>
+
+  <br><br><br>
+  
+
+  <!-- Pied de page -->
+  <footer>
+    <p>© 2025 - Mon projet Scratch. Tous droits réservés.</p>
+    <!-- Mention légale et droits d'auteur -->
+  </footer>
+  <script>
+    function createBubble() {
+      const bubble = document.createElement("div");
+      bubble.classList.add("bubble");
+      bubble.style.left = Math.random() * 100 + "vw";
+      bubble.style.animationDuration = (5 + Math.random() * 5) + "s";
+      document.body.appendChild(bubble);
+      setTimeout(() => bubble.remove(), 50000);
+    }
+    setInterval(createBubble, 1000);
+    </script>
+
+</body>
+</html>

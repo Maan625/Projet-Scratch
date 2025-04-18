@@ -1,0 +1,134 @@
+body {
+  font-family: 'Cairo', sans-serif; 
+  /* Police d'écriture utilisée pour l'ensemble de la page */
+
+  background-color:wheat; 
+  /* Couleur de fond de la page */
+
+  margin: 0; 
+  /* Suppression des marges externes par défaut du navigateur */
+
+  padding: 0; 
+  /* Suppression des espacements internes par défaut */
+
+  text-align: center; 
+  /* Centrer le texte horizontalement */
+}
+#modeButton {
+  position: fixed;           /* يخليه ثابت دائمًا */
+  top: 15px;
+  left: 15px;
+  z-index: 999;              /* فوق كل العناصر */
+  
+  background-color: #ffffffcc;
+  color: #222;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode .game {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode a {
+  color: #fbc02d;
+}
+
+
+#modeButton:hover {
+  background-color: #333;
+  color: white;
+  transform: scale(1.05);
+}
+ 
+
+
+.header-image {
+  width: 100%; 
+  /* L'image prend toute la largeur de son conteneur */
+
+  height: 400px; 
+  /* Hauteur fixe de l'image */
+   object-fit:cover; 
+  /* L'image couvre toute la zone sans être déformée */
+  
+  background-color:rgb(40, 10, 30);
+ }
+
+.content {
+  padding: 15px; 
+  /* Ajoute un espacement intérieur autour du contenu */
+}
+
+h1 {
+  color: #8c1414; 
+  /* Couleur du titre principal (h1) */
+}
+
+.games-container {
+  padding: 20px; 
+  /* Espacement intérieur pour le conteneur des jeux */
+}
+
+.game {
+  background-color: rgb(198, 204, 16); 
+  /* Couleur de fond pour chaque bloc de jeu */
+
+  border-radius: 0 60px 0 60px; 
+  /* Coins arrondis en haut à gauche et en bas à droite */
+
+  box-shadow: 0 0 10px rgba(167, 7, 7, 0.1); 
+  /* Ombre légère autour du bloc pour donner un effet de profondeur */
+
+  padding: 20px; 
+  /* Espacement interne dans le bloc du jeu */
+
+  margin-bottom: 20px; 
+  /* Espace entre les différents blocs de jeux */
+
+  transition: transform 0.3s ease; 
+  /* Animation fluide lors du survol */
+
+  text-align: right; 
+  /* Alignement du texte à droite */
+}
+
+.game:hover {
+  transform: scale(1.05); 
+  /* Légère mise à l’échelle du bloc au survol */
+}
+
+a {
+  color: #8e24aa; 
+  /* Couleur des liens */
+
+  text-decoration: dotted; 
+  /* Soulignement en pointillés pour les liens */
+
+  font-weight: bold; 
+  /* Texte en gras */
+}
+
+ 
+
+footer {
+  margin-top: 40px; 
+  /* Espace en haut du pied de page */
+
+  color: black; 
+  /* Couleur du texte dans le pied de page */
+
+  font-size: 0.9em; 
+  /* Taille de police légèrement plus petite */
+}

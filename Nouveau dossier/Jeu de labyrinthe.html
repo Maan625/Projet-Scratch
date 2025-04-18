@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!-- Cette balise meta est utilisée pour configurer le mode de rendu dans Internet Explorer -->
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+     
+</head>
+<style>
+    body{
+       
+        background-image: url(mataha.avif); /* Image de fond */
+        background-repeat: no-repeat; /* Ne pas répéter l’image */
+        background-size:cover;  /* Adapter l’image à toute la page */
+        background-position: center; /* Centrer l’image */
+        height: 100vw; /* Hauteur égale à la largeur de la fenêtre */
+     }
+     .titre{
+        
+         
+      background-color:rgba(0,0,0,0.5);     
+      color: white; 
+    
+  padding: 20px; 
+  /* Espacement interne dans le bloc du jeu */
+
+  margin-bottom: 20px; 
+  /* Espace entre les différents blocs de jeux */
+
+  transition: transform 0.3s ease; 
+  /* Animation fluide lors du survol */ 
+  position: initial; 
+        bottom: 0;
+        right:0;
+        text-align: right; /* Alignement du texte à droite */
+         }
+         .blinking_title{ 
+            text-align: center; 
+            animation:blink 5s infinite; /* Animation clignotante */
+        font-size:200px;        /* Taille de police */
+        color: rgb(135, 189, 48);   /* Couleur du texte */
+        padding:0;      /* Pas d'espacement interne */
+
+            }
+            @keyframes blink { /* Animation de clignotement */
+                0%, 100%{ 
+                    opacity: 1; /* Opacité à 1 (visible) */
+                }
+                50% {
+                    opacity: 0; /* Opacité à 0 (invisible) */
+
+                }
+            }
+            img{
+                position: absolute; /* Positionnement absolu de l'image */  
+                width: 100px; /* Largeur de l'image */
+                top: 0;        /* Position en haut de la page */    
+                left: 0;    /* Position à gauche de la page */
+                margin: 20px; /* Marge autour de l'image */
+                border-radius: 50%; /* Rendre l'image ronde */
+                box-shadow: 0 0 10px rgba(167, 7, 7, 0.5);  /* Ombre autour de l'image */
+            }
+            button{
+                background-color: #4CAF50; /* Couleur verte */
+                /* Couleur de fond du bouton */   
+                border: none;   /* Pas de bordure */
+                color: white;  /* Couleur du texte du bouton */
+                padding: 15px 32px;     /* Espacement interne du bouton */    
+                text-align: left; /* Alignement du texte à gauche */
+                text-decoration-skip: none; /* Pas de soulignement */
+                display: inline-block;  /* Affichage en ligne du bouton */
+                font-size: 16px;    /* Taille de la police du texte du bouton */
+                margin: 4px 2px;        /* Marges autour du bouton */
+                cursor: pointer;        /* Curseur pointeur au survol */
+                font-style: italic;     /* Italique pour le texte du bouton */
+            }
+</style>
+<body>
+   
+     
+    <h1 class="blinking_title"><strong>#</strong>Scratch 🎮</h1>        
+    <br><br>
+    
+    <div class="titre">     
+    <h1>🎮 Échappe au Labyrinthe</h1>       
+    <p> Un défi palpitant t’attend ! Explore un labyrinthe complexe rempli de virages serrés et d’obstacles inattendus. Utilise ta logique et ta rapidité pour trouver la sortie le plus vite possible. Arriveras-tu à sortir sans te perdre ?
+
+    </p>
+    <iframe src=" https://scratch.mit.edu/projects/1158418757/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen ></iframe>        
+    <!-- Intégration du projet Scratch dans la page -->
+    <br>
+ <button>   <a href=" https://scratch.mit.edu/projects/1158418757/fullscreen/" target="_blank">Jouer dans Scratch</a> </button>  
+
+</div>
+    
+
+    
+</body>
+</html>
