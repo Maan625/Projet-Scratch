@@ -15,10 +15,10 @@ body {
   /* Centrer le texte horizontalement */
 }
 #modeButton {
-  position: fixed;           /* يخليه ثابت دائمًا */
+  position: fixed;           
   top: 15px;
   left: 15px;
-  z-index: 999;              /* فوق كل العناصر */
+  z-index: 999;             
   
   background-color: #ffffffcc;
   color: #222;
