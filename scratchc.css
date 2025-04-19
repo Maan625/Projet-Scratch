@@ -15,21 +15,35 @@ body {
   /* Centrer le texte horizontalement */
 }
 #modeButton {
-  position: fixed;           
-  top: 15px;
-  left: 15px;
-  z-index: 999;             
+  position: fixed;      /* Positionne le bouton de manière fixe, il reste visible même lors du défilement */
+       
+  top: 15px; /* Distance de 15px par rapport au haut de la fenêtre */
+
+  left: 15px;    /* Distance de 15px par rapport au bord gauche */
+
+  z-index: 999;   /* Place le bouton au-dessus des autres éléments (grande priorité d'affichage) */
+
+          
   
-  background-color: #ffffffcc;
-  color: #222;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 25px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  background-color: #ffffffcc; /* Couleur de fond */
+  color: #222;    /* Couleur du texte */
+
+  border: none;  /* Aucun contour autour du bouton */
+
+  padding: 10px 18px;   /* Espacement intérieur : 10px en haut/bas, 18px à gauche/droite */
+
+  border-radius: 25px;  /* Bords arrondis pour un style en forme de pilule */
+
+  font-size: 1rem; /* Taille du texte normale (1rem = 16px par défaut) */
+
+  font-weight: bold;   /* Texte en gras */
+
+  cursor: pointer;  /* Curseur en forme de main au survol */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Ombre portée pour donner de la profondeur */
+
+  transition: all 0.3s ease;   /* Animation fluide pour tout changement de style (durée : 0.3s) */
+
 }
 .dark-mode {
   background-color: #1e1e1e;
