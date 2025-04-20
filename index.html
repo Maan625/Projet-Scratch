@@ -12,11 +12,11 @@
   <!-- Rend la page responsive : elle s’adapte aux différentes tailles d’écrans (téléphones, tablettes, etc.) -->
 
   <link rel="stylesheet" href="scratchc.css">
-  <!-- Lien vers une feuille de style CSS externe (nommée ici "adam.css") pour gérer l'apparence de la page -->
+  <!-- Lien vers une feuille de style CSS externe , pour gérer l'apparence de la page -->
 
   <title>Collection de jeux à Stratch</title>
   <!-- Titre de la page qui s’affiche dans l’onglet du navigateur -->
-  <script src="scratchj.js"></script>
+  <script src="scratchj.js"></script> <!-- Cette ligne permet d'inclure un fichier JavaScript externe nommé "scratchj.js".  -->
   
   
   
@@ -25,7 +25,10 @@
 <body>
   <!-- Début du corps de la page -->
    
-  <button onclick="changerMode()" id="modeButton">🌙 Mode nuit</button>
+  <button onclick="changerMode()" id="modeButton">🌙 Mode nuit</button> <!-- Ce bouton appelle la fonction JavaScript "changerMode()" quand on clique dessus.
+     Il a pour but de basculer entre le mode clair et le mode nuit.
+     L'icône 🌙 et le texte "Mode nuit" indiquent la fonction du bouton.
+     L'attribut id="modeButton" permet d'y accéder facilement via JavaScript ou CSS. -->
  
    
 
@@ -33,8 +36,7 @@
   <!-- Une image affichée en haut de la page. "alt" fournit un texte alternatif si l'image ne s'affiche pas -->
  
 
-  <div class="content">
-    <!-- Conteneur principal pour le titre et la description -->
+  <div class="content"> <!-- Cette div sert de conteneur principal pour le contenu de la page. La classe "content" permet de la styliser via CSS ou de la cibler avec JavaScript. --><!-- Conteneur principal pour le titre et la description -->
     <h1>Collection de jeux à Scratch🕹️</h1>
     <!-- Titre principal de la page -->
     <p>Profitez d’une gamme de jeux simples créés en utilisant Scratch. Choisissez un jeu à jouer ci-dessous!</p>
@@ -51,7 +53,6 @@
       <p>Dans ce jeu, la souris se déplace automatiquement tandis que le joueur contrôle le chat en utilisant des flèches. Le but est d’attraper la souris!</p>
       <!-- Description du jeu -->
       <a href="Nouveau%20dossier/index2.html">Jouer maintenant</a>
-
       <!-- Lien pour accéder au jeu -->
     </div>
 
@@ -82,7 +83,7 @@
 
       </p>
       <a href=" Nouveau%20dossier/index5.html">Jouer maintenant</a>
-      <!-- ATTENTION : ce lien est local et ne fonctionnera que sur l'ordinateur où le fichier est stocké -->
+   
     </div>
 
   </div>
