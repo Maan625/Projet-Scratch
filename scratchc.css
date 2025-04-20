@@ -45,25 +45,25 @@ body {
   transition: all 0.3s ease;   /* Animation fluide pour tout changement de style (durée : 0.3s) */
 
 }
-.dark-mode {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
+.dark-mode {                  /* Définition d'une classe CSS nommée "dark-mode" */
+  background-color: #1e1e1e; On applique une couleur de fond sombre (presque noire) */
+  color: #f0f0f0;   /* On change la couleur du texte en gris très clair pour assurer une bonne lisibilité sur fond foncé */
 }
 
-.dark-mode .game {
+.dark-mode .game { Ciblage de l'élément avec la classe "game" UNIQUEMENT quand il est contenu dans un élément avec la classe "dark-mode" */
   background-color: #333;
   color: white;
 }
 
-.dark-mode a {
+.dark-mode a {  /* Ciblage des balises <a> (liens) uniquement quand elles sont à l'intérieur d'un élément ayant la classe "dark-mode" */
   color: #fbc02d;
 }
 
 
-#modeButton:hover {
+#modeButton:hover {  /* Quand l'utilisateur survole (hover) l'élément avec l'ID "modeButton" */
   background-color: #333;
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.05);  /* Applique un léger zoom (5% plus grand) pour créer un effet interactif visuel */
 }
  
 
