@@ -4,6 +4,8 @@ body {
 
   background-color:wheat; 
   /* Couleur de fond de la page */
+  background-position: top;
+  
 
   margin: 0; 
   /* Suppression des marges externes par défaut du navigateur */
@@ -13,6 +15,7 @@ body {
 
   text-align: center; 
   /* Centrer le texte horizontalement */
+  
 }
 #modeButton {
   position: fixed;      /* Positionne le bouton de manière fixe, il reste visible même lors du défilement */
